@@ -28,8 +28,10 @@ public class MainMenu extends javax.swing.JPanel {
 
         TopPanel = new javax.swing.JPanel();
         BottomPanel = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(600, 400));
         setLayout(new java.awt.BorderLayout());
@@ -47,34 +49,49 @@ public class MainMenu extends javax.swing.JPanel {
 
         add(TopPanel, java.awt.BorderLayout.CENTER);
 
-        jButton1.setText("Home");
-
         jButton2.setText("Profile");
+
+        jButton3.setText("Settings");
+
+        jButton4.setText("Home");
+
+        jButton5.setBackground(new java.awt.Color(255, 102, 102));
+        jButton5.setText("Exit");
 
         javax.swing.GroupLayout BottomPanelLayout = new javax.swing.GroupLayout(BottomPanel);
         BottomPanel.setLayout(BottomPanelLayout);
         BottomPanelLayout.setHorizontalGroup(
             BottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BottomPanelLayout.createSequentialGroup()
-                .addContainerGap(293, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(196, 196, 196))
+                .addGap(156, 156, 156)
+                .addComponent(jButton2)
+                .addGap(114, 114, 114)
+                .addComponent(jButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                .addComponent(jButton5)
+                .addContainerGap())
             .addGroup(BottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(BottomPanelLayout.createSequentialGroup()
-                    .addGap(203, 203, 203)
-                    .addComponent(jButton2)
-                    .addContainerGap(286, Short.MAX_VALUE)))
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BottomPanelLayout.createSequentialGroup()
+                    .addContainerGap(256, Short.MAX_VALUE)
+                    .addComponent(jButton4)
+                    .addGap(233, 233, 233)))
         );
         BottomPanelLayout.setVerticalGroup(
             BottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(BottomPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
+                .addGroup(BottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(BottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
+                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE))
+                    .addGroup(BottomPanelLayout.createSequentialGroup()
+                        .addComponent(jButton5)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(BottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(BottomPanelLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE)
                     .addContainerGap()))
         );
 
@@ -85,7 +102,13 @@ public class MainMenu extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel BottomPanel;
     private javax.swing.JPanel TopPanel;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     // End of variables declaration//GEN-END:variables
+
+    void isVisible(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
